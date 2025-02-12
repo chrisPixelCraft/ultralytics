@@ -70,5 +70,8 @@ names:
 #    59: 59--people--driving--car
 #    60: 61--Street_Battle
 
+class_weights:
+  0: 1.0    # face class
+  1: 6.0    # mask class (to balance the 6:1 ratio)
 
 

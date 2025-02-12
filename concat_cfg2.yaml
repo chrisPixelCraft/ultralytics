@@ -1,0 +1,25 @@
+data: concat.yaml
+model: yolo11l.pt
+epochs: 200
+imgsz: 640
+batch: 4
+device: 0
+optimizer: AdamW
+lr0: 0.0005
+lrf: 0.01
+cos_lr: True
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 10
+patience: 15
+cache: True
+amp: True
+
+
+hsv_h: 0.015  # Hue adjustment range (-25° to +13°)
+hsv_s: 0.7    # Saturation adjustment range
+hsv_v: 0.4    # Exposure adjustment range
+mosaic: 1.0   # Enable mosaic augmentation
+mixup: 0.1    # Enable mixup augmentation
+translate: 0.1     # Consider adding translation augmentation
+scale: 0.5       # Consider adding scale augmentation

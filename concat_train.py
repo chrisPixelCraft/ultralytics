@@ -1,7 +1,10 @@
 from ultralytics import YOLO
 import yaml
+import sys
 
-with open("concat_cfg.yaml", "r") as f:
+cfg_file = sys.argv[1]
+
+with open(cfg_file, "r") as f:
     cfg = yaml.safe_load(f)
 
 # Load a model
