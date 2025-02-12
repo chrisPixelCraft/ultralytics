@@ -1,0 +1,26 @@
+{
+  "host_name": "Gateway1",
+  "host_number": 1,
+  "client_name": [
+    "Cam1",
+    "Cam2",
+    "Cam3"
+  ],
+  "client_number": [
+    1,
+    2,
+    3
+  ],
+  "open_port": {
+    "Gateway2": "tcp://*:11240",
+    "Gateway3": "tcp://*:11241"
+  },
+  "connect_to": {
+    "Gateway2": "tcp://140.112.48.127:11260",
+    "Gateway3": "tcp://140.112.48.126:7221"
+  },
+  "transmit": {
+    "Gateway2": 11,
+    "Gateway3": 3
+  }
+}

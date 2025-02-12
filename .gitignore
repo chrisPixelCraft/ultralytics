@@ -173,3 +173,23 @@ pnnx*
 
 # calibration image
 calibration_*.npy
+
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.tar.lzma
+*.tar.lz
+*.tar.zst
+/afterlabel
+/camera_calibration
+/GUI
+/homo
+/video
+/yolov7-plate
+/yolov7-face
+/crosslabel
+/wider_face
+/fast-reid
+/ByteTrack

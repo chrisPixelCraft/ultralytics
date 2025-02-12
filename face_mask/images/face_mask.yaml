@@ -1,0 +1,74 @@
+path: face_mask # dataset root dir
+train: images/train # train images (relative to 'path') 4 images
+val: images/valid # val images (relative to 'path') 4 images
+test: # test images (optional)
+#test: WIDER_test/images # test images (optional)
+
+# Classes (80 COCO classes)
+names:
+    0: NoMask
+    1: Mask
+#    0: 0--Parade
+#    1: 1--Handshaking
+#    2: 2--Demonstration
+#    3: 3--Riot
+#    4: 4--Dancing
+#    5: 5--Car_Accident
+#    6: 6--Funeral
+#    7: 7--Cheering
+#    8: 8--Election_Campain
+#    9: 9--Press_Conference
+#    10: 10--People_Marching
+#    11: 11--Meeting
+#    12: 12--Group
+#    13: 13--Interview
+#    14: 14--Traffic
+#    15: 15--Stock_Market
+#    16: 16--Award_Ceremony
+#    17: 17--Ceremony
+#    18: 18--Concerts
+#    19: 19--Couple
+#    20: 20--Family_Group
+#    21: 21--Festival
+#    22: 22--Picnic
+#    23: 23--Shoppers
+#    24: 24--Soldier_Firing
+#    25: 25--Soldier_Patrol
+#    26: 26--Soldier_Drilling
+#    27: 27--Spa
+#    28: 28--Sports_Fan
+#    29: 29--Students_Schoolkids
+#    30: 30--Surgeons
+#    31: 31--Waiter_Waitress
+#    32: 32--Worker_Laborer
+#    33: 33--Running
+#    34: 34--Baseball
+#    35: 35--Basketball
+#    36: 36--Football
+#    37: 37--Soccer
+#    38: 38--Tennis
+#    39: 39--Ice_Skating
+#    40: 40--Gymnastics
+#    41: 41--Swimming
+#    42: 42--Car_Racing
+#    43: 43--Row_Boat
+#    44: 44--Aerobics
+#    45: 45--Balloonist
+#    46: 46--Jockey
+#    47: 47--Matador_Bullfighter
+#    48: 48--Parachutist_Paratrooper
+#    49: 49--Greeting
+#    50: 50--Celebration_Or_Party
+#    51: 51--Dresses
+#    52: 52--Photographers
+#    53: 53--Raid
+#    54: 54--Rescue
+#    55: 55--Sports_Coach_Trainer
+#    56: 56--Voter
+#    57: 57--Angler
+#    58: 58--Hockey
+#    59: 59--people--driving--car
+#    60: 61--Street_Battle
+
+
+
