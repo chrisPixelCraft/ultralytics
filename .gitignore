@@ -150,6 +150,7 @@ wandb/
 weights/
 *.weights
 *.pt
+*.pth
 *.pb
 *.onnx
 *.engine
@@ -182,6 +183,9 @@ calibration_*.npy
 *.tar.lzma
 *.tar.lz
 *.tar.zst
+*.mp4
+*.mov
+
 /afterlabel
 /camera_calibration
 /GUI
@@ -193,3 +197,5 @@ calibration_*.npy
 /wider_face
 /fast-reid
 /ByteTrack
+/NTU-MTMC
+/runs
