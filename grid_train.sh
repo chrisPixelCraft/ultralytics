@@ -4,3 +4,4 @@ for cfg_file in "${cfg_files[@]}"; do
     echo "Training $cfg_file"
     python3 concat_train.py "$cfg_file"
 done
+
