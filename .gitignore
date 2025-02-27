@@ -199,3 +199,8 @@ calibration_*.npy
 /ByteTrack
 /NTU-MTMC
 /runs
+/output_compressed
+/output
+/train45
+/train46
+/__MACOSX
