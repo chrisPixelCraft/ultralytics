@@ -16,7 +16,7 @@ DEVICE = "cuda:0"
 
 # Define video source. You can use a webcam, video file or a live stream
 # VIDEO_SOURCE = cv2.VideoCapture(0)  # 0 for webcam
-for i in range(6, 12):
+for i in range(1, 12):
     cap = cv2.VideoCapture(f'NTU-MTMC/test/Cam' + str(i) + '/Cam' + str(i) + '.MP4')
     fps = cap.get(cv2.CAP_PROP_FPS)
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -33,7 +33,7 @@ for i in range(6, 12):
         video_out = cv2.VideoWriter(video_out_fn, fourcc, fps, (frame_width, frame_height))
 
     # Load the YOLO model
-    model = YOLO("train45/weights/best.pt")
+    model = YOLO("/root/ultralytics/runs/detect/train2/weights/best.pt")
     total_sec = 0
     frame_cnt = cap.get(cv2.CAP_PROP_FRAME_COUNT)
     #print(frame_cnt)
