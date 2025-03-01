@@ -22,7 +22,7 @@ for i in range(1, 12):
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # or try 'H264', 'AVCL', 'AVC1'
-    video_out_fn = 'output/test/Cam' + str(i) + '/test.mp4'
+    video_out_fn = 'output_yolo11x/test/Cam' + str(i) + '/test.mp4'
     os.makedirs(os.path.dirname(video_out_fn), exist_ok=True)
     video_out = cv2.VideoWriter(video_out_fn, fourcc, fps, (frame_width, frame_height))
 

@@ -6,11 +6,12 @@ import subprocess
 from tqdm import tqdm
 
 # Create output directory if it doesn't exist
-os.makedirs("output_compressed/test", exist_ok=True)
+os.makedirs("output_compressed_yolo11x/test", exist_ok=True)
 
-for i in range(6, 12):
-    ffmpeg_input = f"output/test/Cam{i}/test.mp4"
-    ffmpeg_out_fn = f"output_compressed/test/Cam{i}_out.mp4"
+for i in range(1, 12):
+    ffmpeg_input = f"output_yolo11x/test/Cam{i}/test.mp4"
+    ffmpeg_out_fn = f"output_compressed_yolo11x/test/Cam{i}_out.mp4"
+    # os.makedirs(f"output_compressed_yolo11x/test/Cam{i}", exist_ok=True)
 
     # Use subprocess.run instead of os.system for better error handling
     # Remove the .exe extension for Linux compatibility

@@ -200,7 +200,9 @@ calibration_*.npy
 /NTU-MTMC
 /runs
 /output_compressed
+/output_compressed_yolo11x
 /output
+/output_yolo11x
 /train45
 /train46
 /__MACOSX
