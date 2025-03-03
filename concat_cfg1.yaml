@@ -1,8 +1,8 @@
 data: concat.yaml
 model: yolo11x.pt
 epochs: 100
-imgsz: [1920,1080]
-batch: 4
+imgsz: 1280
+batch: 2
 device: 0
 optimizer: AdamW
 lr0: 0.001

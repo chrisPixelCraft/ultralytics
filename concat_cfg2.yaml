@@ -1,8 +1,8 @@
 data: concat.yaml
 model: yolo11x.pt
 epochs: 100
-imgsz: [1920, 1080]
-batch: 4
+imgsz: 1280
+batch: 2
 device: 0
 optimizer: AdamW
 lr0: 0.0005
@@ -17,14 +17,11 @@ cache: True
 amp: True
 
 
-
 hsv_h: 0.015  # Hue adjustment range (-25° to +13°)
 hsv_s: 0.7    # Saturation adjustment range
 hsv_v: 0.4    # Exposure adjustment range
 mosaic: 1.0   # Enable mosaic augmentation
 translate: 0.15     # Consider adding translation augmentation
 scale: 0.6       # Consider adding scale augmentation
-flip: 0.5
 mixup: 0.15
 copy_paste: 0.15
-
