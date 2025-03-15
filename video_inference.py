@@ -33,7 +33,7 @@ for i in range(1, 12):
         video_out = cv2.VideoWriter(video_out_fn, fourcc, fps, (frame_width, frame_height))
 
     # Load the YOLO model
-    model = YOLO("/root/ultralytics/runs/detect/train2/weights/best.pt")
+    model = YOLO("/root/ultralytics/train14_yolox11_final_resol_1280.pt")
     total_sec = 0
     frame_cnt = cap.get(cv2.CAP_PROP_FRAME_COUNT)
     #print(frame_cnt)
@@ -77,8 +77,8 @@ for i in range(1, 12):
             #mosaic = cv2.resize(mosaic, (x2 - x, y2 - y), interpolation=cv2.INTER_NEAREST)
             mosaic = cv2.GaussianBlur(tmp, (MOSAIC_SIZE, MOSAIC_SIZE), 10)
             frame[y:y2, x:x2] = mosaic
-            cv2.rectangle(frame, (x, y), (x2, y2), BOX_COLOUR, 2)
-            cv2.putText(frame, f"{object_name}: {conf:.2f}", (x, y - 5), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
+            # cv2.rectangle(frame, (x, y), (x2, y2), BOX_COLOUR, 2)
+            # cv2.putText(frame, f"{object_name}: {conf:.2f}", (x, y - 5), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
 
         # Measure time it took to process 1 frame and overlay fps on the frame
         end = datetime.datetime.now()

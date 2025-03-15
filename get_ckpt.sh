@@ -6,3 +6,4 @@
 
 gdown 1c5PZjOcoRRo3ZSUcZdfSChPfhWiaVYBU -O yolo11x.pt
 
+gdown 1VPPDmt8hjFLtZEZH2w-EIy0NTH40UKjH -O train14_yolox11_final_resol_1280.pt
