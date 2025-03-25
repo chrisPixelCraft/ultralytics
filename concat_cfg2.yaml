@@ -1,5 +1,5 @@
 data: concat.yaml
-model: yolo11x.pt
+model: yolo11l.pt
 epochs: 100
 imgsz: 1280
 batch: 2

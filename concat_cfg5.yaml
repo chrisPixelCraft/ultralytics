@@ -1,11 +1,11 @@
 data: concat.yaml
-model: yolo11x.pt
+model: yolo11n.pt
 epochs: 100
 imgsz: 1280
 batch: 2
 device: 0
 optimizer: AdamW
-lr0: 0.0001
+lr0: 0.0005
 lrf: 0.01
 cos_lr: True
 momentum: 0.937

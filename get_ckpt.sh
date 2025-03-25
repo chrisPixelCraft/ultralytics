@@ -5,5 +5,9 @@
 # unzip train46.zip
 
 gdown 1c5PZjOcoRRo3ZSUcZdfSChPfhWiaVYBU -O yolo11x.pt
+gdown 1d_AFbhSllK9qyYpBAPTjEgxLPvuH-EQ5 -O yolo11m.pt
+gdown 1iAVP_xUoAusiHLUHbWTEz7UPs8G9KpPd -O yolo11l.pt
+gdown 1H9pY0kJTFzSyuZGUopdcuDPX99ydzrWF -O yolo11s.pt
+gdown 1OSMmpbgxC44UPotnOmnILXWRU4Kvq0tS -O yolo11n.pt
 
 gdown 1VPPDmt8hjFLtZEZH2w-EIy0NTH40UKjH -O train14_yolox11_final_resol_1280.pt
