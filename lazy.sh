@@ -1,0 +1,4 @@
+curl -H "Authorization: Bearer ya29.a0AeXRPp7i0QXxcX5-5tRsPtIP7313NYJM5XUR0oXsW19X8Yz_r7s1TBl7lE4Ms-D-zdhmNMr-By2BMGlOlM1uMRyaf_8mpec0pE2hUIgGoCokzG3UsZHcjkcjhTeAxgD6x5bLh9GGav4Og9epQVJASBZC3KoEQOMVwPQLf21jaCgYKAZwSARESFQHGX2MiIqA9dTRE9iat96yXaUaydA0175" https://www.googleapis.com/drive/v3/files/1tZ_merTuqkVOPGI1DSovOG3PhUckOMK-?alt=media -o NTU-MTMC.zip
+unzip -n NTU-MTMC.zip
+
+python3 video_inference_recursive.py
