@@ -43,6 +43,10 @@ for i in range(1, 12):
     for j in tqdm(range(int(frame_cnt))):
         start = datetime.datetime.now()
         ret, frame = cap.read()
+        if ret:
+            # Resize the frame to 4 times larger while maintaining resolution and clarity
+            # Using INTER_CUBIC interpolation for better quality when upscaling
+            frame = cv2.resize(frame, (frame_width*2, frame_height*2), interpolation=cv2.INTER_LANCZOS4)
 
         #frame = cv2.resize(frame, (1080, 1920, 3))
         # if there are no more frames to process, stop the loop
@@ -101,6 +105,9 @@ for i in range(1, 12):
             print(f"Processing frame {j}/{int(frame_cnt)} for camera {i}")
 
         # Write the frame to the output video?
+        # Downsample the frame to the original size while maintaining resolution and clarity
+        # Using INTER_CUBIC for high-quality downsampling with good balance of quality and performance
+        frame = cv2.resize(frame, (frame_width, frame_height), interpolation=cv2.INTER_LANCZOS4)
         video_out.write(frame)
         #if j == 5000:
         #    break

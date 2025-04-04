@@ -43,6 +43,12 @@ def process_video(input_path, output_path, model_path):
             print("End of video or error reading frame")
             break
 
+        # Resize the frame to 4 times larger while maintaining resolution and clarity
+        # Using INTER_CUBIC interpolation for better quality when upscaling
+        # Try increasing the scaling factor, e.g., *3 or *4
+        scale_factor = 4 # Or 4, experiment with this value
+        frame = cv2.resize(frame, (frame_width*scale_factor, frame_height*scale_factor), interpolation=cv2.INTER_CUBIC)
+
         # Run the model inference on the frame (device and verbosity set as needed)
         results = model(frame, device=DEVICE, verbose=False)
         result = results[0]
@@ -58,6 +64,10 @@ def process_video(input_path, output_path, model_path):
             roi = frame[y:y2, x:x2]
             blurred = cv2.GaussianBlur(roi, (MOSAIC_SIZE, MOSAIC_SIZE), 10)
             frame[y:y2, x:x2] = blurred
+
+        # Downsample the frame to the original size while maintaining resolution and clarity
+        # Using INTER_CUBIC for high-quality downsampling with good balance of quality and performance
+        frame = cv2.resize(frame, (frame_width, frame_height), interpolation=cv2.INTER_CUBIC)
 
         video_out.write(frame)
 
@@ -98,7 +108,7 @@ def main():
     ]
 
     # Process videos for cameras 1 through 11
-    for i in range(1, 12):
+    for i in range(10, 12):
         original_video = f"NTU-MTMC/test/Cam{i}/Cam{i}.MP4"
         # Check if the video file exists
         if not os.path.exists(original_video):
